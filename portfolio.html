@@ -47,27 +47,28 @@
       <!-- h1 в данном случае вымышлен -->
       <!-- <h1>Портфолио</h1> -->
       <!-- Кнопки -->
-      <div class="container">
-        <ul class="list-button">
-          <li class="item-button">
-            <button class="button-main" type="button">Все</button>
-          </li>
-          <li class="item-button">
-            <button class="button-main" type="button">Веб-сайты</button>
-          </li>
-          <li class="item-button">
-            <button class="button-main" type="button">Приложения</button>
-          </li>
-          <li class="item-button">
-            <button class="button-main" type="button">Дизайн</button>
-          </li>
-          <li class="item-button">
-            <button class="button-main" type="button">Маркетинг</button>
-          </li>
-        </ul>
-      </div>
-      <!-- Наши работы -->
-      <section class="section">
+      <section class="section-portfolio">
+        <div class="container">
+          <ul class="list-button">
+            <li class="item-button">
+              <button class="button-main" type="button">Все</button>
+            </li>
+            <li class="item-button">
+              <button class="button-main" type="button">Веб-сайты</button>
+            </li>
+            <li class="item-button">
+              <button class="button-main" type="button">Приложения</button>
+            </li>
+            <li class="item-button">
+              <button class="button-main" type="button">Дизайн</button>
+            </li>
+            <li class="item-button">
+              <button class="button-main" type="button">Маркетинг</button>
+            </li>
+          </ul>
+        </div>
+        <!-- Наши работы -->
+
         <div class="container">
           <ul class="list-work">
             <li class="item-work">
@@ -140,13 +141,49 @@
     <!-- подвал -->
     <footer class="footer">
       <div class="container">
-        <a href class="logo"> <span class="logo-accent">Web</span><span class="footer-span">Studio</span> </a>
-        <address>
-          <p class="footer-adress">г. Киев, пр-т Леси Украинки, 26</p>
-          <a href="mailto:info@devstudio.com" class="footer-link"> info@devstudio.com </a>
-          <br />
-          <a href="tel:+380961111111" class="footer-tel">+38 096 111 11 11</a>
-        </address>
+        <div>
+          <a href class="logo"> <span class="logo-accent">Web</span><span class="footer-span">Studio</span> </a>
+          <address>
+            <p class="footer-adress">г. Киев, пр-т Леси Украинки, 26</p>
+            <a href="mailto:info@devstudio.com" class="footer-link"> info@devstudio.com </a>
+            <br />
+            <a href="tel:+380961111111" class="footer-tel">+38 096 111 11 11</a>
+          </address>
+        </div>
+
+        <div class="footer-container">
+          <p class="link-footer">Присоединяйтесь</p>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a href="" class="footer-card">
+                <svg class="footer-icon">
+                  <use href="./svg/sprait.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-item">
+              <a href="" class="footer-card">
+                <svg class="footer-icon">
+                  <use href="./svg/sprait.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-item">
+              <a href="" class="footer-card">
+                <svg class="footer-icon">
+                  <use href="./svg/sprait.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-item">
+              <a href="" class="footer-card">
+                <svg class="footer-icon">
+                  <use href="./svg/sprait.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>

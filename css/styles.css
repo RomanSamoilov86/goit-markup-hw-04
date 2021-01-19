@@ -336,30 +336,16 @@ ul {
   padding-right: 32px;
 }
 
-.client-logo .item-logo-link {
-  width: 170px;
-  height: 90px;
-  border: 1px solid #afb1b8;
-  box-sizing: border-box;
-  border-radius: 4px;
-  cursor: pointer;
+.item-logo-link {
+  flex-basis: calc(100% / 6 - 30px);
+  margin-left: 30px;
 }
-/* .client-logo .item-logo-link {
-  width: 170px;
-  height: 90px;
-  border: 1px solid #afb1b8;
-  box-sizing: border-box;
-  border-radius: 4px;
-  cursor: pointer;
-} */
-.client-logo .item-link:hover,
-.client-logo .item-link:focus {
-  --color1: #2196f3;
+
+.item-logo-link:hover .logo-icons {
+  color: #2196f3;
   border: 1px solid #2196f3;
 }
-.client-logo .item-logo-link:not(:last-child) {
-  margin-right: 30px;
-}
+
 .logo-icons {
   display: inline-block;
   width: 100%;
@@ -371,7 +357,7 @@ ul {
 }
 .client-logo {
   display: flex;
-  justify-content: space-between;
+  margin-left: -30px;
 }
 .section-title-primary {
   font-family: Roboto;
@@ -382,6 +368,15 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+.item-link {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  height: 90px;
+  display: flex;
+}
+.item-link:hover .logo-icons {
+  color: var(--accent-text-color);
 }
 /* ================   END Studia   ===================== */
 /* ================   Portfolio   =============== */
@@ -586,7 +581,7 @@ address {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  /* position: absolute; */
   background: rgba(255, 255, 255, 0.1);
 }
 
@@ -594,4 +589,16 @@ address {
   width: 206px;
   height: 80px;
   justify-content: left;
+}
+.footer .container {
+  display: flex;
+}
+.link-footer {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #ffffff;
 }

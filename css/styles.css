@@ -141,6 +141,14 @@ ul {
 .auth-nav-link:hover {
   color: var(--accent-text-color);
 }
+.auth-nav-link:focus .icon-mail,
+.auth-nav-link:hover .icon-mail {
+  fill: var(--accent-text-color);
+}
+.auth-nav-link:focus .icon-phone,
+.auth-nav-link:hover .icon-phone {
+  fill: var(--accent-text-color);
+}
 
 .icon-mail {
   width: 16px;
@@ -158,11 +166,13 @@ ul {
   cursor: pointer;
 }
 
-.link-auth:hover .icon-phone {
+.link-auth:hover .icon-phone,
+.link-auth:focus .icon-phone {
   fill: var(--accent-text-color);
 }
 
-.link-auth:hover .icon-mail {
+.link-auth:hover .icon-mail,
+.link-auth:focus .icon-mail {
   fill: var(--accent-text-color);
 }
 
@@ -336,14 +346,16 @@ ul {
 .item-card:focus {
   background-color: var(--accent-text-color);
 }
-.item-icon:hover {
+/* .item-icon:hover,
+.item-icon:focus {
   fill: #fff;
-}
+} */
 .card-list {
   display: flex;
   justify-content: space-between;
 }
-.item-card:hover .item-icon {
+.item-card:hover .item-icon,
+.item-card:focus .item-icon {
   fill: #fff;
 }
 .item-card {
@@ -359,17 +371,22 @@ ul {
   padding-top: 30px;
   padding-left: 32px;
   padding-right: 32px;
+  padding-bottom: 30px;
 }
 
 .item-logo-link {
   flex-basis: calc(100% / 6 - 30px);
   margin-left: 30px;
 }
-
-.item-logo-link:hover .logo-icons {
-  color: #2196f3;
-  border: 1px solid #2196f3;
+.item-logo-link:focus,
+.item-logo-link:hover {
+  color: var(--accent-text-color);
 }
+
+/* .item-link:hover .logo-icons,
+.item-link:focus .logo-icons {
+  fill: var(--accent-text-color);
+} */
 
 .logo-icons {
   display: inline-block;
@@ -432,7 +449,7 @@ ul {
 .item-work:hover,
 .item-work:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 .item-button {
   margin-left: 8px;
@@ -595,14 +612,16 @@ address {
 .footer-container {
   padding-top: 30px;
 }
-.footer-icon:hover {
+.footer-icon:hover,
+.footer-icon:focus {
   fill: #fff;
 }
 .footer-list {
   display: flex;
   justify-content: space-between;
 }
-.footer-card:hover .footer-icon {
+.footer-card:hover .footer-icon,
+.footer-card:focus .footer-icon {
   fill: #fff;
 }
 .footer-card {
@@ -637,16 +656,24 @@ address {
 .item-link:hover,
 .item-link:focus {
   background-color: #ffffff;
-}
-.logo-icons:hover {
   fill: var(--accent-text-color);
+  border-color: var(--accent-text-color);
+}
+
+/* .logo-icons:hover,
+.logo-icons:focus {
+  fill: var(--accent-text-color);
+  border-color: var(--accent-text-color);
+} */
+
+.item-link:hover .logo-icons,
+.item-link:focus .logo-icons {
+  fill: var(--accent-text-color);
+  border-color: var(--accent-text-color);
 }
 .card-list {
   display: flex;
   justify-content: space-between;
-}
-.item-link:hover .logo-icons {
-  fill: var(--accent-text-color);
 }
 .section-portfolio {
   padding-top: 94px;

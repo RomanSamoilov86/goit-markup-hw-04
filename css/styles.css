@@ -350,6 +350,7 @@ li.card-item:not(:last-child) {
 .item-card:hover,
 .item-card:focus {
   background-color: var(--accent-text-color);
+  outline: none;
 }
 
 .item-card:hover .item-icon,
@@ -387,12 +388,12 @@ li.card-item:not(:last-child) {
 }
 .section-logo {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 .client-logo {
   display: flex;
   margin-left: -30px;
-  padding-top: 50px;
-  padding-bottom: 94px;
+  /* padding-top: 50px; */
 }
 .section-title-primary {
   font-family: Roboto;
@@ -403,6 +404,7 @@ li.card-item:not(:last-child) {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  margin-bottom: 50px;
 }
 .item-link {
   border: 1px solid #afb1b8;
@@ -615,6 +617,7 @@ address {
 .footer-card:hover,
 .footer-card:focus {
   background-color: var(--accent-text-color);
+  outline: none;
 }
 .footer-icon {
   fill: #ffffff;
@@ -661,6 +664,8 @@ address {
   line-height: 1.14;
   text-transform: uppercase;
   color: #ffffff;
+  margin-top: 12px;
+  margin-bottom: 20px;
 }
 /* =============================== ===================*/
 .item-link:hover,
@@ -686,6 +691,7 @@ address {
 .footer-container {
   margin-left: 70px;
   text-align: left;
+  /* justify-content: center; */
 }
 .our-work:focus,
 .our-work:hover {

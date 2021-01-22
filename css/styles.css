@@ -461,7 +461,10 @@ li.card-item:not(:last-child) {
   font-size: 14px;
   line-height: 1.71;
 }
-
+.card {
+  background-color: #fff;
+  border-radius: 0px 0px 4px 4px;
+}
 /* ================   END Studia   ===================== */
 
 /* ================   Portfolio   =============== */
